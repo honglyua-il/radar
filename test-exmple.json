@@ -2,8 +2,9 @@
   {
     "name": "NVIDIA/DALI",
     "description": "A GPU-accelerated library containing highly optimized building blocks and an execution engine for data processing to accelerate deep learning training and inference applications.",
+    "url": "https://github.com/NVIDIA/DALI",
     "ring": "Adopt",
     "quadrant": "Frameworks",
-    "status": "new"
+    "status": "new",
   }
 ]
