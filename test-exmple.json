@@ -28,7 +28,6 @@
     "name": "Dao-AILab/causal-conv1d",
     "description": "Causal depthwise conv1d in CUDA, with a PyTorch interface",
     "url": "https://github.com/Dao-AILab/causal-conv1d",
-    "license": "BSD 3-Clause \"New\" or \"Revised\" License",
     "topics": "No Topics",
     "ring": "Adopt",
     "quadrant": "Platforms",
