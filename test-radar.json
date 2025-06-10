@@ -65,7 +65,7 @@
   {
     "name": "GitHub push protection",
     "ring": "Assess",
-    "quadrant": "Frameworks",
+    "quadrant": "Frameworksq",
     "isNew": "TRUE",
     "description": "<p>The accidental publication of secrets seems to be a perennial issue with tools such as <a href=\"/radar/tools/talisman\">Talisman</a> popping up to help with the problem. Before now, GitHub Enterprise Cloud users with an Advanced Security License could enable security scanning on their accounts, and any secrets (API keys, access tokens, credentials, etc.) that were accidentally committed and pushed would trigger an alert. <strong><a href=\"https://docs.github.com/en/enterprise-cloud@latest/code-security/secret-scanning/protecting-pushes-with-secret-scanning\">GitHub push protection</a></strong> takes this one step further, and brings it one step earlier in the development workflow, by blocking changes from being pushed at all if secrets are detected. This needs to be configured for the organization and applies, of course, only to license holders, but additional protection from publishing secrets is to be welcomed.</p>"
   },
