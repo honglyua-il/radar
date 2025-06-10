@@ -2,26 +2,8 @@
   {
     "name": "NVIDIA/DALI",
     "description": "A GPU-accelerated library containing highly optimized building blocks and an execution engine for data processing to accelerate deep learning training and inference applications.",
-    "url": "https://github.com/NVIDIA/DALI",
-    "license": "Apache License 2.0",
-    "topics": "audio-processing, data-augmentation, data-processing, deep-learning, fast-data-pipeline, gpu, gpu-tensorflow, image-augmentation, image-processing, machine-learning, mxnet, neural-network, paddle, python, pytorch",
-    "comment": "libraries",
     "ring": "Adopt",
     "quadrant": "Frameworks",
-    "status": "new",
-    "created_at": "2018-06-01T22:18:01Z",
-    "open_days": 2564,
-    "pushed_at": "2025-06-04T13:40:37Z",
-    "stars": 5423,
-    "forks": 638,
-    "commits": 3901,
-    "open_prs": 35,
-    "closed_prs": 4246,
-    "open_issues": 218,
-    "closed_issues": 1437,
-    "inner_source": "FALSE",
-    "is_nvidia": "TRUE",
-    "latest_release.tag_name": "v1.50.0",
-    "latest_release.published_at": "2025-05-27T17:43:38Z"
+    "status": "new"
   }
 ]
