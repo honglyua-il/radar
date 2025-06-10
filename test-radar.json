@@ -2,14 +2,14 @@
   {
     "name": "Path-to-production mapping",
     "ring": "Adopt",
-    "quadrant": "Platform",
+    "quadrant": "Platforms",
     "isNew": "TRUE",
     "description": "<p>Although <strong>path-to-production mapping</strong> has been a near-universal practice at Thoughtworks since codifying <em><a href=\"https://www.amazon.com/Continuous-Delivery-Deployment-Automation-Addison-Wesley/dp/0321601912\">Continuous Delivery</a></em>, we often come across organizations unfamiliar with the practice. The activity is most often done in a workshop with a cross-functional group of people —  that includes everyone involved in designing, developing, releasing and operating the software — around a shared whiteboard (or virtual equivalent). First, the steps in the process are listed in order, from the developer workstation all the way to production. Then, a facilitated session is used to capture further information and pain points. The most common technique we see is based on <a href=\"https://en.wikipedia.org/wiki/Value-stream_mapping\">value-stream mapping</a>, although plenty of <a href=\"https://caroli.org/en/path-to-production/\">process map</a> variants are equally valuable. The activity is often eye-opening for many of the participants, as they identify delays, risks and inconsistencies and continue to use the visual representation for the continuous improvement of the build and deploy process. We consider this technique so foundational that we were surprised to discover we hadn't blipped it before.</p>"
   },
   {
     "name": "Component visual regression testing",
     "ring": "Trial",
-    "quadrant": "Platform",
+    "quadrant": "Platforms",
     "isNew": "FALSE",
     "description": "<p><a href=\"/radar/tools/visual-regression-testing-tools\">Visual regression testing</a> is a useful and powerful tool to have in your toolbox, but it has a significant cost given it's done for the entire page. With the rise of component-based frameworks such as <a href=\"/radar/languages-and-frameworks/react-js\">React</a> and <a href=\"/radar/languages-and-frameworks/vue-js\">Vue</a>, we've also seen the rise of <strong>component visual regression testing</strong>. This technique strikes a good balance between value and cost to ensure that no undesired visuals have been added to the application. In our experience, component visual regression testing presents fewer false positives and promotes a good architectural style. By using it with tools such as <a href=\"https://github.com/vitejs/vite\">Vite</a> and the webpack feature <a href=\"https://webpack.js.org/guides/hot-module-replacement/\">Hot Module Replacement (HMR)</a>, it could be seen as a paradigm shift for applying test-driven development to front-end development.</p>"
   },
@@ -56,53 +56,18 @@
     "description": "<p>We're seeing some interest in the <strong><a href=\"https://github.com/carbon-language/carbon-lang\">Carbon</a></strong> programming language. That doesn't come as a surprise: it has Google's backing and is presented as a natural successor to C++. In our opinion C++ can't be replaced fast enough as software engineers have shown, over the past decades, that writing safe and error-free C++ code is extremely difficult and time-consuming. While Carbon is an interesting concept with its focus on migration from C++, without a working compiler, it's clearly a long way from being usable and there are other modern programming languages that are good choices if you want to migrate from C++. It's too early to tell whether Carbon will become the natural successor to C++, but, from today's perspective, we recommend that teams look at <a href=\"/radar/languages-and-frameworks/rust\">Rust</a> and <a href=\"/radar/languages-and-frameworks/go-language\">Go</a> rather than postponing a migration because they're waiting for Carbon to arrive.</p>"
   },
   {
-    "name": "Team cognitive load",
-    "ring": "Adopt",
-    "quadrant": "Application",
-    "isNew": "TRUE",
-    "description": "<p>Team interaction is a key concept when redesigning an organization for business agility and speed. These interactions will be reflected in the software being built (see <a href=\"https://www.thoughtworks.com/about-us/news/2021/latest-thoughtworks-technology-radar-proclaims---embrace-conway-\">Conway's Law</a>) and indicate how effectively teams can autonomously deliver value to their customers. Our advice is to be intentional about how teams are designed and how they interact. Because we believe that organizational design and team interactions evolve over time, we think it's particularly important to measure and keep track of the <strong>team cognitive load</strong>, which indicates how easy or difficult teams find building, testing and maintaining their services. We've been using a <a href=\"https://github.com/TeamTopologies/Team-Cognitive-Load-Assessment\">template</a> to assess team cognitive load that is based on ideas by the authors of the <em><a href=\"https://teamtopologies.com/book\">Team Topologies</a></em> book.</p>"
-  },
-  {
-    "name": "Threat modeling",
-    "ring": "Adopt",
-    "quadrant": "Application",
-    "isNew": "FALSE",
-    "description": "<p>We continue to recommend that teams carry out <strong><a href=\"https://www.owasp.org/index.php/Category:Threat_Modeling\">threat modeling</a></strong> — a set of Platform to help you identify and classify potential threats during the development process — but we want to emphasize that this is not a one-off activity only done at the start of projects; teams need to avoid the <a href=\"/radar/Platform/security-sandwich\">security sandwich</a>. This is because throughout the lifetime of any software, new threats will emerge and existing ones will continue to evolve thanks to external events and ongoing changes to requirements and architecture. This means that threat modeling needs to be repeated periodically — the frequency of repetition will depend on the circumstances and will need to consider factors such as the cost of running the exercise and the potential risk to the business. When used in conjunction with other Platform, such as establishing cross-functional security requirements to address common risks in the project's technologies and using automated security scanners, threat modeling can be a powerful asset.</p>"
-  },
-  {
-    "name": "Backstage",
-    "ring": "Adopt",
-    "quadrant": "Application",
-    "isNew": "FALSE",
-    "description": "<p>In an increasingly digital world, improving developer effectiveness in large organizations is often a core concern of senior leaders. We've seen enough value with developer portals in general and <strong><a href=\"https://backstage.io/\">Backstage</a></strong> in particular that we're happy to recommend it in Adopt. Backstage is an open-source developer portal platform created by Spotify that improves discovery of software assets across the organization. It uses Markdown <a href=\"https://backstage.io/docs/features/techdocs/techdocs-overview\">TechDocs</a> that live alongside the code for each service, which nicely balances the needs of centralized discovery with the need for distributed ownership of assets. Backstage supports software templates to accelerate new development and a plugin architecture that allows for extensibility and adaptability into an organization's infrastructure ecosystem. <a href=\"https://backstage.io/docs/features/software-catalog/software-catalog-overview\">Backstage Service Catalog</a> uses YAML files to track ownership and metadata for all the software in an organization's ecosystem; it even lets you track third-party SaaS software, which usually requires tracking ownership.</p>"
-  },
-  {
-    "name": "Delta Lake",
-    "ring": "Adopt",
-    "quadrant": "Application",
-    "isNew": "FALSE",
-    "description": "<p><strong><a href=\"https://delta.io/\">Delta Lake</a></strong> is an <a href=\"https://github.com/delta-io/delta\">open-source storage layer</a>, implemented by Databricks, that attempts to bring ACID transactions to big data processing. In our Databricks-enabled <a href=\"/radar/Platform/data-lake\">data lake</a> or <a href=\"/radar/Platform/data-mesh\">data mesh</a> projects, our teams prefer using Delta Lake storage over the direct use of file storage types such as <a href=\"https://aws.amazon.com/s3/\">AWS S3</a> or <a href=\"https://azure.microsoft.com/en-au/services/storage/data-lake-storage/\">ADLS</a>. Until recently, Delta Lake has been a closed proprietary product from Databricks, but it's now open source and accessible to non-Databricks platforms. However, our recommendation of Delta Lake as a default choice currently extends only to Databricks projects that use <a href=\"https://parquet.apache.org/\">Parquet</a> file formats. Delta Lake facilitates concurrent data read/write use cases where file-level transactionality is required. We find Delta Lake's seamless integration with Apache Spark <a href=\"https://docs.databricks.com/delta/delta-batch.html\">batch</a> and <a href=\"https://docs.databricks.com/delta/delta-streaming.html\">micro-batch</a> APIs very helpful, particularly features such as <a href=\"https://databricks.com/blog/2019/02/04/introducing-delta-time-travel-for-large-scale-data-lakes.html\">time travel</a> (accessing data at a particular point in time or commit reversion) as well as <a href=\"https://databricks.com/blog/2019/09/24/diving-into-delta-lake-schema-enforcement-evolution.html\">schema evolution</a> support on write.</p>"
-  },
-  {
-    "name": "git-together",
+    "name": "CUPID",
     "ring": "Assess",
     "quadrant": "Frameworks",
     "isNew": "TRUE",
-    "description": "<p>We're always looking for ways to remove small frictions from pair programming, which is why we're excited by <a href=\"https://github.com/kejadlen/git-together\"><strong>git-together</strong></a>, a tool written in Rust that simplifies git commit attribution during pairing. By aliasing <code>git-together</code> as <code>git</code>, the tool allows you to add extensions to <code>git config</code> that capture committer information, aliasing each committer by their initials. Changing pairs (or switching to soloing or mob programming) requires you to run <code>git with</code>, followed by the initials of the pair (for example: <code>git with bb cc</code>), allowing you to resume your regular git workflow afterward. Every time you commit, git-together will rotate through the pair as the official author that git stores, and it will automatically add any other authors to the bottom of the commit message. The configuration can be checked in with the repo, allowing git-together to work automatically after cloning a repo.</p>"
+    "description": "<p>How do you approach writing good code? How do you judge if you've written good code? As software developers, we're always looking for catchy rules, principles and patterns that we can use to share a language and values with each other when it comes to writing simple, easy-to-change code.</p><p>Daniel Terhorst-North has recently made a new attempt at creating such a checklist for good code. He argues that instead of sticking to a set of rules like <a href=\"https://en.wikipedia.org/wiki/SOLID\">SOLID</a>, using a set of properties to aim for is more generally applicable. He came up with what he calls the <strong><a href=\"https://dannorth.net/2022/02/10/cupid-for-joyful-coding/\">CUPID</a></strong> properties to describe what we should strive for to achieve \"joyful\" code: Code should be composable, follow the Unix philosophy and be predictable, idiomatic and domain based.</p>"
   },
   {
-    "name": "Harness Cloud Cost Management",
+    "name": "GitHub push protection",
     "ring": "Assess",
     "quadrant": "Frameworks",
     "isNew": "TRUE",
-    "description": "<p><strong><a href=\"https://harness.io/products/cloud-cost\">Harness Cloud Cost Management</a></strong> is a commercial tool that works across all three of the major cloud providers and their managed <a href=\"/radar/platforms/kubernetes\">Kubernetes</a> clusters to help visualize and manage cloud costs. The product calculates a cost efficiency score by looking at idle resources as well as resources not allocated to any workload and uses historical trends to help optimize resource allocation. The dashboards highlight cost spikes and allow a user to register unexpected anomalies, which are then fed into their reinforcement learning algorithm around anomaly detection. Cloud Cost Management can recommend adjustments to limits for memory and CPU usage, with options to optimize for either cost or performance. \"Perspectives\" allows you to group costs based on organizationally defined filters (which could correspond to business units, teams or products) and automate report distribution to bring visibility into cloud spend. We believe Cloud Cost Management offers a compelling feature set to help organizations mature their FinOps practices.</p>"
-  },
-  {
-    "name": "Infracost",
-    "ring": "Assess",
-    "quadrant": "Frameworks",
-    "isNew": "TRUE",
-    "description": "<p>We continue to see organizations move to the cloud without properly understanding how they will track ongoing spend. We previously blipped <a href=\"/radar/Platform/run-cost-as-architecture-fitness-function\">run cost as architecture fitness function</a>, and <a href=\"https://infracost.io/\"><strong>Infracost</strong></a> is a tool that aims to make these cloud cost trade-offs visible in Terraform pull requests. It's open-source software and available for macOS, Linux, Windows and Docker and supports pricing for AWS, GCP and Microsoft Azure out of the box. It also provides a public API that can be queried for current cost data. We remain excited by its potential, especially when it comes to gaining better cost visibility in the IDE.</p>"
+    "description": "<p>The accidental publication of secrets seems to be a perennial issue with tools such as <a href=\"/radar/tools/talisman\">Talisman</a> popping up to help with the problem. Before now, GitHub Enterprise Cloud users with an Advanced Security License could enable security scanning on their accounts, and any secrets (API keys, access tokens, credentials, etc.) that were accidentally committed and pushed would trigger an alert. <strong><a href=\"https://docs.github.com/en/enterprise-cloud@latest/code-security/secret-scanning/protecting-pushes-with-secret-scanning\">GitHub push protection</a></strong> takes this one step further, and brings it one step earlier in the development workflow, by blocking changes from being pushed at all if secrets are detected. This needs to be configured for the organization and applies, of course, only to license holders, but additional protection from publishing secrets is to be welcomed.</p>"
   },
   {
     "name": "Karpenter",
@@ -110,5 +75,26 @@
     "quadrant": "Frameworks",
     "isNew": "TRUE",
     "description": "<p>One of the fundamental capabilities of <a href=\"/radar/platforms/kubernetes\">Kubernetes</a> is its ability to automatically launch new pods when additional capacity is needed and shut them down when loads decrease. This horizontal autoscaling is a useful feature, but it can only work if the nodes needed to host the pods already exist. While <a href=\"https://github.com/kubernetes/autoscaler/tree/master/cluster-autoscaler\">Cluster Autoscaler</a> can do some rudimentary cluster expansion triggered by pod failures, it has limited flexibility; <strong><a href=\"https://karpenter.sh/\">Karpenter</a></strong>, however, is an open-source <a href=\"/radar/tools/kubernetes-operators\">Kubernetes Operator</a> autoscaler with more smarts built in: it analyzes the current workloads and the pod scheduling constraints to automatically select an appropriate instance type and then start or stop it as needed. Karpenter is an operator in the spirit of tools like <a href=\"/radar/tools/crossplane\">Crossplane</a> that can provision cloud resources outside the cluster. Karpenter is an attractive companion to the autoscaling services cloud vendors provide natively with their managed Kubernetes clusters. For example, AWS now supports Karpenter as a first-class alternative in their EKS Cluster Autoscaler service.</p>"
+  },
+  {
+    "name": "Mizu",
+    "ring": "Assess",
+    "quadrant": "Frameworks",
+    "isNew": "TRUE",
+    "description": "<p><strong><a href=\"https://github.com/up9inc/mizu/tree/main\">Mizu</a></strong> is an API traffic viewer for <a href=\"/radar/platforms/kubernetes\">Kubernetes</a>. Unlike other tools, Mizu does not require instrumentation or code changes. It runs as a <a href=\"https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/\">DaemonSet</a> to inject a container at the node level in your Kubernetes cluster and performs tcpdump-like operations. We find it useful as a debugging tool, as it can observe all API communications across multiple protocols (REST, gRPC, <a href=\"/radar/platforms/apache-kafka\">Kafka</a>, AMQP and <a href=\"/radar/platforms/redis\">Redis</a>) in real time.</p>"
+  },
+  {
+    "name": "Soda Core",
+    "ring": "Assess",
+    "quadrant": "Application",
+    "isNew": "TRUE",
+    "description": "<p><a href=\"https://www.soda.io/core\"><strong>Soda Core</strong></a> is an open-source data quality and observability tool. We talked about <a href=\"/radar/tools/great-expectations\">Great Expectations</a> previously in the Radar, and Soda Core is an alternative with a key difference — you express the data validations in a DSL called <a href=\"https://docs.soda.io/soda-cl/soda-cl-overview.html\">SodaCL</a> (previously called <a href=\"https://docs.soda.io/soda-sql/overview.html\">Soda SQL</a>) as opposed to Python functions. Once the validations are written, it can be executed as part of a <a href=\"https://docs.soda.io/soda-core/orchestrate-scans.html\">data pipeline</a> or <a href=\"https://docs.soda.io/soda-core/programmatic.html\">scheduled to run programmatically</a>. As we become increasingly data-driven, it's critical to maintain data quality, and we encourage you to assess Soda Core.</p>"
+  },
+  {
+    "name": "Teller",
+    "ring": "Assess",
+    "quadrant": "Application",
+    "isNew": "TRUE",
+    "description": "<p><strong><a href=\"https://github.com/tellerops/teller\">Teller</a></strong> is an open-source universal secret manager for developers that ensures the correct environment variables are set when starting an application. However, it's not a vault itself — it's a CLI tool that connects to a variety of sources, ranging from cloud secrets providers to third-party solutions like <a href=\"/radar/tools/hashicorp-vault\">HashiCorp Vault</a> to local environment files. Teller has additional functionality to scan for vault-kept secrets in your code, to redact secrets from logs, to detect drift between secrets providers and to sync between them. Given the sensitivity of accessing secrets, we can't emphasize enough the need to secure the supply chain for open-source dependencies, but we appreciate how easy the CLI is to use in local development environments, CI/CD pipelines and deployment automation.</p>"
   }
 ]
