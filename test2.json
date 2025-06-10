@@ -3,48 +3,48 @@
     "name": "NVIDIA/DALI",
     "description": "A GPU-accelerated library containing highly optimized building blocks and an execution engine for data processing to accelerate deep learning training and inference applications.",
     "ring": "Trial",
-    "quadrant": "Platform",
+    "quadrant": "Platform"
   },
   {
     "name": "Dao-AILab/causal-conv1d",
     "description": "Causal depthwise conv1d in CUDA, with a PyTorch interface",
     "ring": "Adopt",
-    "quadrant": "Platform",
+    "quadrant": "Platform"
   },
   {
     "name": "bitsandbytes-foundation/bitsandbytes",
     "description": "Accessible large language models via k-bit quantization for PyTorch.",
     "ring": "Adopt",
-    "quadrant": "Platform",
+    "quadrant": "Frameworks"
   },
   {
     "name": "AutoGPTQ/AutoGPTQ",
     "description": "An easy-to-use LLMs quantization package with user-friendly apis, based on GPTQ algorithm.",
     "ring": "Adopt",
-    "quadrant": "Tool",
+    "quadrant": "Tool"
   },
   {
     "name": "NVIDIA/DeepLearningExamples",
     "description": "State-of-the-Art Deep Learning scripts organized by models - easy to train and deploy with reproducible accuracy and performance on enterprise-grade infrastructure.",
     "ring": "Adopt",
-    "quadrant": "Application",
+    "quadrant": "Application"
   },
   {
     "name": "gpustack/gpustack",
     "description": "Simple, scalable AI model deployment on GPU clusters",
     "ring": "Adopt",
-    "quadrant": "Tool",
+    "quadrant": "Tool"
   },
   {
     "name": "huggingface/accelerate",
     "description": "A simple way to launch, train, and use PyTorch models on almost any device and distributed configuration, automatic mixed precision (including fp8), and easy-to-configure FSDP and DeepSpeed support",
     "ring": "Adopt",
-    "quadrant": "Platform",
+    "quadrant": "Frameworks"
   },
   {
     "name": "huggingface/lighteval",
     "description": "Lighteval is your all-in-one toolkit for evaluating LLMs across multiple backends",
     "ring": "Adopt",
-    "quadrant": "Tool",
+    "quadrant": "Tool"
   }
 ]
