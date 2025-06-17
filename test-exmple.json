@@ -1,7 +1,7 @@
 [
   {
     "name": "NVIDIA/DALI",
-    "description": "<a href="https://github.com/vllm-project/vllm">vllm-project/vllm</a>: A high-throughput and memory-efficient inference and serving engine for LLMs<br><img src="images/vllm-project_vllm_openrank.png" width="400">",
+    "description": "<a href=\"https://github.com/vllm-project/vllm\">vllm-project/vllm</a>: A high-throughput and memory-efficient inference and serving engine for LLMs<br><img src=\"images/vllm-project_vllm_openrank.png\" width=\"400\">",
     "ring": "Adopt",
     "quadrant": "Frameworks",
     "status": "new",
